@@ -6,7 +6,7 @@
 
 ## Evaluación Técnica
 
-Este es un proyecto de aprendizaje que brinda la solución a una <a href="public/pdf/evaluacion_tecnica.pdf">evaluación técnica</a> de Laravel. Dentro de este proyecto podemos encontrar lo diferentes conceptos y características que el framework nos proporciona. Tales como:
+Este es un proyecto de aprendizaje que brinda la solución a una <a href="public/pdf/evaluacion-tecnica.pdf">evaluación técnica</a> de Laravel. Dentro de este proyecto podemos encontrar lo diferentes conceptos y características que el framework nos proporciona. Tales como:
 
 - Migraciones.
 - Rutas.
