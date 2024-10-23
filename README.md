@@ -33,7 +33,7 @@ El proyecto esta realizado en Laravel por lo que queda mas que claro que se debe
 1. Clonación del repositorio.
 
     ```bash
-    git clone https://github.com/taylorotwell/learn-laravel.git
+    git clone https://github.com/Devothion/evaluacion-tecnica.git
     ```
 
 2. Accedemos a la carpeta del proyecto.
