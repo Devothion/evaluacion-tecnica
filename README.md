@@ -1,66 +1,105 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+## Evaluación Técnica
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Este es un proyecto de aprendizaje que brinda la solución a una <a href="public/pdf/evaluacion_tecnica.pdf">evaluación técnica</a> de Laravel. Dentro de este proyecto podemos encontrar lo diferentes conceptos y características que el framework nos proporciona. Tales como:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Migraciones.
+- Rutas.
+- Controladores.
+- Requests.
+- Factories.
+- ORM Eloquent.
+- Vistas de Blade.
+- Relaciones.
+- API
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Laravel facilita la creación de aplicaciones gracias a estos conceptos, todos manejados por comandos de artisan.
 
-## Learning Laravel
+Adicionalmente hay algunas herramientas extra que he utilizado, tales como:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Tailwind CSS
+- Daisy UI
+- MySQL
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Instalación
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+El proyecto esta realizado en Laravel por lo que queda mas que claro que se debe instalar PHP, Composer y Node. En mi caso estoy utilizado XAMPP para acceder a una base de datos MySQL por medio de PhpMyAdmin y PHP en su version 8.2. Además para clonar este proyecto se debe tener instalado Git.
 
-## Laravel Sponsors
+1. Clonación del repositorio.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+    ```bash
+    git clone https://github.com/taylorotwell/learn-laravel.git
+    ```
 
-### Premium Partners
+2. Accedemos a la carpeta del proyecto.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+    ```bash
+    cd evaluacion-tecnica
+    ```
 
-## Contributing
+3. Instalación de Composer.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+    ```bash
+    composer install
+    ```
+4. Instalación de Node.
 
-## Code of Conduct
+    ```bash
+    npm install
+    ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Antes de empezar a ejecutar el proyecto, no olvidar que tenemos que ejecutar MySQL de manera local y luego ejecutar las migraciones del sistema. En caso de que se quisiera cambiar la dirección de la base de datos, se puede hacer desde el archivo .env en la carpeta del proyecto.
 
-## Security Vulnerabilities
+1. Configuración de archivo .env.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    ```env
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=evaluacion_tecnica
+    DB_USERNAME=root
+    DB_PASSWORD=
+    ```
+2. Ejecución de migraciones.
 
-## License
+    ```bash
+    php artisan migrate
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Una vez que se ejecuten las migraciones, se puede iniciar el servidor de Laravel y también el servidor de Vite. Por defecto se ejecutará el servidor de Laravel en el puerto 8000.
+
+1. En otra terminal, ejecutar el servidor de Vite.
+    ```bash
+    npm run dev
+    ```
+
+2. En una terminal, ejecutar el servidor de Laravel.
+    ```bash
+    php artisan serve
+    ```
+
+Por ultimo se puede ver el proyecto en el navegador. Si visitamos el localhost:8000, se verán nuestro proyecto y sus recursos.
+
+
+## API
+
+Este proyecto como la evaluación técnica lo solicita, presenta una integración con API REST para realizar operaciones de una nueva tarea, está protegida por el paquete de Laravel Sanctum para generar un token de usuario. Dentro de la aplicación en la pestaña "API Documentación" se puede visualizar los endpoints para las peticiones a la API.
+En la pestaña de perfil de usuario se puede generar nuevos tokens de usuario para asi poder acceder a la API, siendo un máximo de 3 tokens por usuario.
+
+![API Token Generation](public/images/API_Token_Generation.png)
+
+## Relaciones de la Base de Datos
+
+Como lo solicita la evaluación técnica, en la base de datos deben existir relaciones para manejar las tareas de la mejor forma posible. Aquí la estructura de la base de datos.
+
+<img src="public/images/Relaciones_DB.png" alt="Logo del proyecto" width="900">
+
+
+## Acerca de mi
+
+Soy [Julio Espinoza](https://julio-espinoza.netlify.app/) desarrollador web full Stack. No olvides visitarme en mi Portfolio Web.

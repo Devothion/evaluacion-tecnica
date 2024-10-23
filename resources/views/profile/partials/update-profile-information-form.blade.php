@@ -47,6 +47,12 @@
             @endif
         </div>
 
+        <div>
+            <x-input-label for="dni" :value="__('DNI')" />
+            <x-text-input id="dni" name="dni" type="text" class="mt-1 block w-full" :value="old('dni', $user->dni)" required autocomplete="dni" />
+            <x-input-error class="mt-2" :messages="$errors->get('dni')" />
+        </div>   
+
         <div class="flex items-center gap-4">
             <x-primary-button>{{ __('Save') }}</x-primary-button>
 

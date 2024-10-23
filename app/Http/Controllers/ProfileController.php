@@ -16,8 +16,14 @@ class ProfileController extends Controller
      */
     public function edit(Request $request): View
     {
+        // Obtener al usuario autenticado
+        $user = $request->user();
+
+        // Obtener los tokens creados por el usuario
+        $tokens = $user->tokens()->get(['id', 'name', 'token']);
         return view('profile.edit', [
-            'user' => $request->user(),
+            'user' => $user,
+            'tokens' => $tokens
         ]);
     }
 
