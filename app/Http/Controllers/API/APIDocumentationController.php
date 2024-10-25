@@ -9,6 +9,6 @@ class APIDocumentationController extends Controller
 {
     public function index()
     {
-        return view('api.documentation');
+        return view('API.documentation');
     }
 }
