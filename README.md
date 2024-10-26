@@ -26,7 +26,7 @@ Adicionalmente hay algunas herramientas extra que he utilizado, tales como:
 - Daisy UI
 - MySQL
 
-## Instalación
+## Instalación Local
 
 El proyecto esta realizado en Laravel por lo que queda mas que claro que se debe instalar PHP, Composer y Node. En mi caso estoy utilizado XAMPP para acceder a una base de datos MySQL por medio de PhpMyAdmin y PHP en su version 8.2. Además para clonar este proyecto se debe tener instalado Git.
 
@@ -85,6 +85,17 @@ Una vez que se ejecuten las migraciones, se puede iniciar el servidor de Laravel
 
 Por ultimo se puede ver el proyecto en el navegador. Si visitamos el localhost:8000, se verán nuestro proyecto y sus recursos.
 
+## Visita la aplicación web
+Puedes ver la aplicación web en la siguiente URL: http://89.117.33.186:8000/
+
+Accede con las siguientes credenciales. Correo: **test@test.com** y Contraseña: **123456789**.
+
+El proyecto esta desplegado con Docker en un servidor VPS de Hostinger.
+
+## Diseño Responsive
+Esta aplicación web tiene integrado un diseño responsive para una mejor experiencia de usuario. Cumpliendo con la presentación que sugiere la evaluación técnica.
+
+![API Token Generation](public/images/Diseño_Responsive.png)
 
 ## API
 

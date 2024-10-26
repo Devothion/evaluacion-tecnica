@@ -72,7 +72,7 @@
                                     <h2 class="text-xl font-semibold text-black">Tareas</h2>
 
                                     <p class="mt-4 text-sm/relaxed">
-                                        Este es un proyecto de aprendizaje que se realizo con el fin de darle resolución a una evalución tecnica. Se trata de una aplicacion de gestión de tareas que puede ser manejado por multiples usuarios.
+                                        Este es un proyecto de aprendizaje que se realizo con el fin de darle resolución a una <a href="{{ asset('pdf/evaluacion-tecnica.pdf') }}" class="link link-secondary" target="_blank">evaluacion tecnica</a>. Se trata de una aplicacion de gestión de tareas que puede ser manejado por multiples usuarios.
                                     </p>
                                 </div>
                             </div>
