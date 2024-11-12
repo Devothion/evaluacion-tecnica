@@ -13,7 +13,7 @@
                     <h3 class="text-lg text-gray-900 mt-3">Nuevo usuario</h3>
                     <p class="mt-2 text-sm text-gray-600">Para crear un nuevo usuario en la aplicación por medio de la API.</p>
                     <div class="mockup-code mt-2">
-                        <pre><code><span class="text-yellow-600">POST</span> http://localhost:8000/api/users</code></pre>
+                        <pre><code><span class="text-yellow-600">POST</span> /api/users</code></pre>
                     </div>
                     <p class="mt-2 text-sm text-gray-600">Los campos requeridos para crear un nuevo usuario son:</p>
                     <div class="mockup-code mt-2">
@@ -40,13 +40,13 @@
                     <h3 class="text-lg text-gray-900 mt-7">Obtener todas las tareas</h3>
                     <p class="mt-2 text-sm text-gray-600">Para obtener todas las tareas creadas.</p>
                     <div class="mockup-code mt-2">
-                        <pre><code><span class="text-green-600">GET</span> http://localhost:8000/api/v1/tareas</code></pre>
+                        <pre><code><span class="text-green-600">GET</span> /api/v1/tareas</code></pre>
                     </div>
 
                     <h3 class="text-lg text-gray-900 mt-7">Crear una nueva tarea</h3>
                     <p class="mt-2 text-sm text-gray-600">Para crear una nueva tarea en la aplicación por medio de la API.</p>
                     <div class="mockup-code mt-2">
-                        <pre><code><span class="text-yellow-600">POST</span> http://localhost:8000/api/v1/tareas</code></pre>
+                        <pre><code><span class="text-yellow-600">POST</span> /api/v1/tareas</code></pre>
                     </div>
                     <p class="mt-2 text-sm text-gray-600">Los campos requeridos para crear una nueva tarea son:</p>
                     <div class="mockup-code mt-2">
@@ -60,13 +60,13 @@
                     <h3 class="text-lg text-gray-900 mt-7">Obtener una sola tarea</h3>
                     <p class="mt-2 text-sm text-gray-600">Para crear obtener una sola tarea especifica por medio de la API, donde {id} es el ID de la tarea.</p>
                     <div class="mockup-code mt-2">
-                        <pre><code><span class="text-green-600">GET</span> http://localhost:8000/api/v1/tareas/{id}</code></pre>
+                        <pre><code><span class="text-green-600">GET</span> /api/v1/tareas/{id}</code></pre>
                     </div>
 
                     <h3 class="text-lg text-gray-900 mt-7">Actualizar una tarea</h3>
                     <p class="mt-2 text-sm text-gray-600">Para crear actualizar una tarea en especifico por medio de la API.</p>
                     <div class="mockup-code mt-2">
-                        <pre><code><span class="text-blue-400">PUT</span> http://localhost:8000/api/v1/tareas/{id}</code></pre>
+                        <pre><code><span class="text-blue-400">PUT</span> /api/v1/tareas/{id}</code></pre>
                     </div>
                     <p class="mt-2 text-sm text-gray-600">Los campos requeridos para actualizar una tarea son:</p>
                     <div class="mockup-code mt-2">
@@ -81,7 +81,7 @@
                     <h3 class="text-lg text-gray-900 mt-7">Eliminar una tarea</h3>
                     <p class="mt-2 text-sm text-gray-600">Para crear eliminar una sola tarea especifica por medio de la API, donde {id} es el ID de la tarea.</p>
                     <div class="mockup-code mt-2">
-                        <pre><code><span class="text-red-600">DELETE</span> http://localhost:8000/api/v1/tareas/{id}</code></pre>
+                        <pre><code><span class="text-red-600">DELETE</span> /api/v1/tareas/{id}</code></pre>
                     </div>
                     
                 </div>
